@@ -72,6 +72,11 @@ const config: Config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontFamily: {
+        "array-bold-wide": ['"Array-BoldWide"', '"BespokeSerif"', "serif"],
+        array: ['"Array"', '"BespokeSerif"', "serif"],
+        "bespoke-serif": ['"BespokeSerif"', "serif"],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

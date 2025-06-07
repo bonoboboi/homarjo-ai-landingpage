@@ -1,7 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { ThemeProvider } from "@/components/theme-provider"
-import "./globals.css"
+import ClientLayout from "./client-layout"
 
 export const metadata: Metadata = {
   title: "AI Systems for Law Firms | Confidential Data Solutions",
@@ -34,17 +33,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="stylesheet" href="/fonts/array.css" />
-        <link rel="stylesheet" href="/fonts/bespoke-serif.css" />
-      </head>
-      <body className="min-h-screen bg-[#ffffe6] dark:bg-[#10100e] text-[#08167a] dark:text-[#ffffe6] transition-colors">
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          {children}
-        </ThemeProvider>
-      </body>
-    </html>
-  )
+  return <ClientLayout>{children}</ClientLayout>
 }
+
+
+import './globals.css'

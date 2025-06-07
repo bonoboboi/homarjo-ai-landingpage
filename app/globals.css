@@ -55,25 +55,112 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: "BespokeSerif", serif;
+  }
+
+  /* Override any default system fonts */
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video,
+  input,
+  textarea,
+  select,
+  button {
+    font-family: "BespokeSerif", serif;
   }
 }
 
-.font-array-wide-bold {
-  font-family: "Array-BoldWide", sans-serif;
+.font-array-bold-wide {
+  font-family: "Array-BoldWide", "BespokeSerif", serif !important;
 }
 
 .font-array {
-  font-family: "Array-Regular", sans-serif;
-}
-
-.font-array-semibold {
-  font-family: "Array-Semibold", sans-serif;
+  font-family: "Array", "BespokeSerif", serif !important;
 }
 
 .font-bespoke-serif {
-  font-family: "BespokeSerif-Regular", serif;
+  font-family: "BespokeSerif", serif !important;
 }
 
-.font-bespoke-serif-medium {
-  font-family: "BespokeSerif-Medium", serif;
+.font-bespoke-serif-bold {
+  font-family: "BespokeSerif", serif !important;
+  font-weight: 700;
 }
